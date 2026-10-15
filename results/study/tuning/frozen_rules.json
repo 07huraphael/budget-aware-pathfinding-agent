@@ -1,0 +1,192 @@
+{
+  "rules": {
+    "chunk_size": 32,
+    "low_budget_factor": 4.0,
+    "dense_threshold": 0.25,
+    "stagnation_windows": 2,
+    "minimum_progress": 1.0,
+    "frontier_growth_threshold": 4,
+    "max_switches": 2,
+    "quality_target": 1.1,
+    "improvement_patience": 3,
+    "return_remaining_fraction": 0.1
+  },
+  "best_fixed": "weighted_1.5",
+  "candidate_scores": [
+    {
+      "candidate": 0,
+      "rules": {
+        "chunk_size": 32,
+        "low_budget_factor": 4.0,
+        "dense_threshold": 0.25,
+        "stagnation_windows": 2,
+        "minimum_progress": 1.0,
+        "frontier_growth_threshold": 4,
+        "max_switches": 2,
+        "quality_target": 1.1,
+        "improvement_patience": 3,
+        "return_remaining_fraction": 0.1
+      },
+      "s_1.10": 0.6477987421383647,
+      "reach_rate": 0.7295597484276729,
+      "expansions": 105819
+    },
+    {
+      "candidate": 1,
+      "rules": {
+        "chunk_size": 16,
+        "low_budget_factor": 2,
+        "dense_threshold": 0.25,
+        "stagnation_windows": 2,
+        "minimum_progress": 1.0,
+        "frontier_growth_threshold": 4,
+        "max_switches": 2,
+        "quality_target": 1.1,
+        "improvement_patience": 3,
+        "return_remaining_fraction": 0.1
+      },
+      "s_1.10": 0.5660377358490566,
+      "reach_rate": 0.6477987421383647,
+      "expansions": 95755
+    },
+    {
+      "candidate": 2,
+      "rules": {
+        "chunk_size": 64,
+        "low_budget_factor": 4.0,
+        "dense_threshold": 0.25,
+        "stagnation_windows": 3,
+        "minimum_progress": 1.0,
+        "frontier_growth_threshold": 4,
+        "max_switches": 2,
+        "quality_target": 1.1,
+        "improvement_patience": 3,
+        "return_remaining_fraction": 0.1
+      },
+      "s_1.10": 0.6477987421383647,
+      "reach_rate": 0.710691823899371,
+      "expansions": 103871
+    },
+    {
+      "candidate": 3,
+      "rules": {
+        "chunk_size": 32,
+        "low_budget_factor": 6,
+        "dense_threshold": 0.35,
+        "stagnation_windows": 2,
+        "minimum_progress": 1.0,
+        "frontier_growth_threshold": 4,
+        "max_switches": 2,
+        "quality_target": 1.1,
+        "improvement_patience": 3,
+        "return_remaining_fraction": 0.1
+      },
+      "s_1.10": 0.6477987421383647,
+      "reach_rate": 0.7295597484276729,
+      "expansions": 110759
+    }
+  ],
+  "fixed_scores": [
+    {
+      "method": "bfs",
+      "s_1.10": 0.3270440251572327,
+      "reach_rate": 0.5471698113207547,
+      "expansions": 89683
+    },
+    {
+      "method": "dijkstra",
+      "s_1.10": 0.5471698113207547,
+      "reach_rate": 0.5471698113207547,
+      "expansions": 90095
+    },
+    {
+      "method": "astar",
+      "s_1.10": 0.5723270440251572,
+      "reach_rate": 0.5723270440251572,
+      "expansions": 72079
+    },
+    {
+      "method": "greedy",
+      "s_1.10": 0.3522012578616352,
+      "reach_rate": 0.7672955974842768,
+      "expansions": 40829
+    },
+    {
+      "method": "weighted_1.5",
+      "s_1.10": 0.7044025157232704,
+      "reach_rate": 0.7295597484276729,
+      "expansions": 46123
+    },
+    {
+      "method": "weighted_3",
+      "s_1.10": 0.4779874213836478,
+      "reach_rate": 0.7484276729559748,
+      "expansions": 59881
+    }
+  ],
+  "selection_metric": "S1.10, reach rate, fewer expansions",
+  "validation_map_ids": [
+    "validation-2f90f8be4501c062",
+    "validation-ac60df42a805a8f7",
+    "validation-3194626abb13a2be",
+    "validation-ddd8f38b0ad0a38b",
+    "validation-cebb50c148112ae9",
+    "validation-091329efaa09b8f9",
+    "validation-28e67c089630d5f7",
+    "validation-a9fda9a10069a279",
+    "validation-feb15ccc1ab42622",
+    "validation-0515f02877f10d56",
+    "validation-1582f449a4996662",
+    "validation-ec805b7cde639e78",
+    "validation-c308ecc1240971ca",
+    "validation-c00b4a58b4a1c91f",
+    "validation-e8e778c954bb3db0",
+    "validation-dac794171fd8c02b",
+    "validation-9582d0607d7c577e",
+    "validation-1a07262798899df5",
+    "validation-e5231d4bbac65acc",
+    "validation-b8145385518aa439",
+    "validation-0b3b2106f78baddc",
+    "validation-ccf9b63dc9fe16fd",
+    "validation-254bfc3edacfca22",
+    "validation-43274819647f9f71",
+    "validation-e9a785c8bf6538c4",
+    "validation-639ed7b28b228c67",
+    "validation-9bdc3c6014e1908f",
+    "validation-8aa05733bca77f9f",
+    "validation-0795d28b7f14086f",
+    "validation-8e1167d17de6103c",
+    "validation-78db24ab2e964501",
+    "validation-e142ab708f37da89",
+    "validation-52119efaf732da4e",
+    "validation-5bfc8e1845431950",
+    "validation-c68d622aa7dc396d",
+    "validation-459a9c034018cda1",
+    "validation-3c20a8fa7c2e66d9",
+    "validation-164f79804d72dd08",
+    "validation-5567aafd9f1c5af5",
+    "validation-58a95a5c81ba696e",
+    "validation-2967b3f590ed1604",
+    "validation-94c3388d45e76f4a",
+    "validation-8c729a9e5e992e7b",
+    "validation-fc6520d147039cce",
+    "validation-6c00cbf3f7aace9c",
+    "validation-3c5b557498719cf1",
+    "validation-9e0c64af5dc7911b",
+    "validation-b563971c800aa27d",
+    "validation-1a95d8f8a8363871",
+    "validation-cdefd4ca928e4e5e",
+    "validation-be4eecb6c5789805",
+    "validation-c501a000e8534f9a",
+    "validation-0875dc1602322943",
+    "validation-84102d98720c8b45",
+    "validation-0b2a8d4bbd72dbb5",
+    "validation-a54ea4d2b39441d8",
+    "validation-f150e9cf30838685",
+    "validation-abb5615d36b8dd38",
+    "validation-7615837fd090a740",
+    "validation-b2cb9a9162127cdb"
+  ],
+  "test_data_used": false,
+  "source_sha256": "e37946989dceabd9438bcc7091125a3030746e0212523cb40955bc18b6cfeafa"
+}

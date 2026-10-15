@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Budget-Aware · 경로 탐색 실험실</title><link rel="stylesheet" href="/styles.css"></head>
+<body>
+<header><div class="brand"><span class="mark">↗</span><div>Budget-Aware<span class="brand-sub">PATHFINDING LAB</span></div></div><div class="local"><i></i> 로컬 시뮬레이터 <span>v0.1</span></div></header>
+<main>
+<div class="intro"><div><span class="eyebrow">LIMITED RESOURCES. EXPLAINABLE DECISIONS.</span><h1>계산에도 예산이 필요하니까.</h1><p>탐색 전략을 선택하고, 진행을 관찰하고, 충분한 경로를 반환하는 에이전트.</p></div><button id="export" class="quiet" disabled>결과 JSON 저장 ↗</button></div>
+<div class="workspace">
+<aside class="panel controls"><div class="panel-head"><h2>실험 설정</h2><span>01</span></div>
+<label>지도 크기<select id="size"><option value="20">20 × 20</option><option value="50">50 × 50</option><option value="100">100 × 100</option></select></label>
+<label>장애물 구조<select id="structure"><option value="random">무작위 배치</option><option value="u">U자 함정</option><option value="wall">우회 벽 · 좁은 통로</option><option value="maze">막다른 길 미로</option></select></label>
+<label>장애물 밀도 <span id="densityValue">20%</span><input id="density" type="range" min="0" max="50" step="5" value="20"></label>
+<p class="hint" id="densityHint">구조 지도는 생성 후 실제 밀도를 표시합니다.</p>
+<label>난수 시드<input id="seed" type="number" value="42" min="0" max="2147483647"></label>
+<label class="toggle"><input id="weighted" type="checkbox"><span>가중 지형 <small>이동 비용 1 · 3 · 5</small></span></label>
+<div class="rule"></div>
+<label>탐색 방법<select id="method"><option value="adaptive">적응형 에이전트</option><option value="astar">A*</option><option value="weighted_3">Weighted A* (3.0)</option><option value="weighted_1.5">Weighted A* (1.5)</option><option value="greedy">Greedy Best-First</option><option value="bfs">BFS</option><option value="dijkstra">Dijkstra</option><option value="ara">ARA*</option><option value="initial">초기 선택만</option><option value="equal">균등 예산 배분</option><option value="first_solution">첫 경로 즉시 반환</option><option value="no_progress">진행 정보 제거</option><option value="no_early_return">조기 반환 제거</option><option value="unlimited_switches">전환 횟수 제한 제거</option></select></label>
+<label>총 확장 예산<select id="budget"><option value="100">100 nodes</option><option value="1000" selected>1,000 nodes</option><option value="10000">10,000 nodes</option></select></label>
+<button id="run" class="primary">탐색 실행 <span>→</span></button><button id="generate" class="secondary">새 지도 생성</button>
+<p class="hint">지도를 클릭해 장애물을 편집할 수 있습니다. 중복 탐색도 예산에 포함됩니다.</p>
+</aside>
+<section class="center">
+<div class="metrics"><div class="metric"><span>현재 전략</span><strong id="active">준비</strong><small id="phase">탐색을 실행해 주세요</small></div><div class="metric"><span>남은 확장 예산</span><strong id="remaining">1,000</strong><small id="expanded">0 nodes used</small></div><div class="metric"><span>확보한 경로 비용</span><strong id="cost">—</strong><small id="quality">품질은 실행 후 평가</small></div></div>
+<div class="panel map-panel"><div class="panel-head"><h2>Grid world <span id="mapSize">20 × 20</span></h2><div class="map-meta"><span id="actualDensity">밀도 —</span><span id="mapSeed">seed 42</span></div></div><div class="canvas-wrap"><canvas id="grid" width="900" height="900" aria-label="경로 탐색 지도"></canvas></div><div class="legend"><span><i class="start"></i>출발</span><span><i class="goal"></i>도착</span><span><i class="wall"></i>장애물</span><span><i class="visited"></i>탐색</span><span><i class="path"></i>경로</span><span class="terrain-key">가중 지형: 3 <i class="cost3"></i> 5 <i class="cost5"></i></span></div>
+<div class="playback"><button id="play" aria-label="재생 또는 일시정지" disabled>▶</button><input id="timeline" type="range" value="0" min="0" max="1" disabled aria-label="탐색 재생 위치"><span id="position">0 / 0</span><select id="speed" aria-label="재생 속도"><option value="5">느리게</option><option value="25" selected>보통</option><option value="100">빠르게</option></select></div></div>
+<div class="panel comparison"><div class="panel-head"><h2>같은 지도, 같은 예산</h2><span id="runtime">계산 시간 —</span></div><div class="table-wrap"><table><thead><tr><th>전략</th><th>결과</th><th>비용</th><th>확장</th><th>시간</th></tr></thead><tbody id="comparisons"><tr><td colspan="5" class="empty">실행 후 고정 전략 및 ARA*와 비교합니다.</td></tr></tbody></table></div></div>
+</section>
+<aside class="right"><div class="panel decisions"><div class="panel-head"><h2>판단 기록</h2><span>LIVE TRACE</span></div><div id="reason" class="current-reason">지도 특징과 남은 예산을 바탕으로 초기 전략을 선택합니다.</div><div id="log"><div class="empty">선택 · 유지 · 전환 · 반환<br>실제 규칙과 관찰값을 표시합니다.</div></div></div>
+<div class="panel chart"><div class="panel-head"><h2>경로 비용 개선</h2></div><svg id="chart" viewBox="0 0 310 170" role="img" aria-label="확장에 따른 경로 비용 개선"></svg><p class="hint">가로축: 사용한 확장 예산<br>애니메이션 재생 시간은 계산 시간에서 제외됩니다.</p></div>
+<div class="method-note"><span class="eyebrow">WHY THIS MATTERS</span><p>최적 경로를 찾기 위해 더 계산할지, 지금 확보한 경로를 반환할지.</p><small>실제 최적 비용은 실행이 끝난 뒤 평가에만 사용합니다.</small></div></aside>
+</div><div id="error" role="alert" hidden></div>
+<footer>4방향 이동 · 정적 지도 · 독립 탐색 상태 <span id="memory">메모리: 실행 후 추정</span></footer>
+</main><script src="/app.js"></script>
+</body></html>

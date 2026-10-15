@@ -1,0 +1,11 @@
+{
+  "split": "smoke",
+  "seed": 20261014,
+  "sizes": [20],
+  "densities": [0.2],
+  "cost_modes": ["uniform", "weighted"],
+  "structures": ["random", "u", "wall", "maze"],
+  "repeats": 2,
+  "budgets": [100, 1000],
+  "profile_memory": true
+}

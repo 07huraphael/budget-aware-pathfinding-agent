@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "budget-aware-pathfinding"
+version = "0.1.0"
+description = "Reproducible budget-aware grid search and adaptive control experiments"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+budget-pathfinding = "budget_pathfinding.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+budget_pathfinding = ["web/*"]

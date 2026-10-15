@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="610" viewBox="0 0 1000 610">
+<rect width="100%" height="100%" fill="#101827"/>
+<text x="30" y="40" fill="#f3f6fc" font-size="22" font-family="sans-serif">Mean controller time / total measured time</text>
+<text x="20" y="89" fill="#d7dfed" font-size="14" font-family="sans-serif">adaptive</text>
+<rect x="200" y="72" width="16.54" height="23" rx="4" fill="#4edbb0"/>
+<text x="880" y="89" fill="#eef3fc" font-size="14" font-family="sans-serif">2.5%</text>
+<text x="20" y="123" fill="#d7dfed" font-size="14" font-family="sans-serif">ara</text>
+<rect x="200" y="106" width="13.13" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="123" fill="#eef3fc" font-size="14" font-family="sans-serif">2.0%</text>
+<text x="20" y="157" fill="#d7dfed" font-size="14" font-family="sans-serif">astar</text>
+<rect x="200" y="140" width="13.77" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="157" fill="#eef3fc" font-size="14" font-family="sans-serif">2.1%</text>
+<text x="20" y="191" fill="#d7dfed" font-size="14" font-family="sans-serif">bfs</text>
+<rect x="200" y="174" width="16.34" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="191" fill="#eef3fc" font-size="14" font-family="sans-serif">2.5%</text>
+<text x="20" y="225" fill="#d7dfed" font-size="14" font-family="sans-serif">dijkstra</text>
+<rect x="200" y="208" width="14.93" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="225" fill="#eef3fc" font-size="14" font-family="sans-serif">2.3%</text>
+<text x="20" y="259" fill="#d7dfed" font-size="14" font-family="sans-serif">equal</text>
+<rect x="200" y="242" width="28.44" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="259" fill="#eef3fc" font-size="14" font-family="sans-serif">4.4%</text>
+<text x="20" y="293" fill="#d7dfed" font-size="14" font-family="sans-serif">first_solution</text>
+<rect x="200" y="276" width="15.77" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="293" fill="#eef3fc" font-size="14" font-family="sans-serif">2.4%</text>
+<text x="20" y="327" fill="#d7dfed" font-size="14" font-family="sans-serif">greedy</text>
+<rect x="200" y="310" width="11.93" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="327" fill="#eef3fc" font-size="14" font-family="sans-serif">1.8%</text>
+<text x="20" y="361" fill="#d7dfed" font-size="14" font-family="sans-serif">initial</text>
+<rect x="200" y="344" width="14.77" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="361" fill="#eef3fc" font-size="14" font-family="sans-serif">2.3%</text>
+<text x="20" y="395" fill="#d7dfed" font-size="14" font-family="sans-serif">no_early_return</text>
+<rect x="200" y="378" width="18.03" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="395" fill="#eef3fc" font-size="14" font-family="sans-serif">2.8%</text>
+<text x="20" y="429" fill="#d7dfed" font-size="14" font-family="sans-serif">no_progress</text>
+<rect x="200" y="412" width="18.56" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="429" fill="#eef3fc" font-size="14" font-family="sans-serif">2.9%</text>
+<text x="20" y="463" fill="#d7dfed" font-size="14" font-family="sans-serif">no_switch</text>
+<rect x="200" y="446" width="14.29" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="463" fill="#eef3fc" font-size="14" font-family="sans-serif">2.2%</text>
+<text x="20" y="497" fill="#d7dfed" font-size="14" font-family="sans-serif">unlimited_switches</text>
+<rect x="200" y="480" width="16.93" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="497" fill="#eef3fc" font-size="14" font-family="sans-serif">2.6%</text>
+<text x="20" y="531" fill="#d7dfed" font-size="14" font-family="sans-serif">weighted_1.5</text>
+<rect x="200" y="514" width="12.28" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="531" fill="#eef3fc" font-size="14" font-family="sans-serif">1.9%</text>
+<text x="20" y="565" fill="#d7dfed" font-size="14" font-family="sans-serif">weighted_3</text>
+<rect x="200" y="548" width="12.38" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="565" fill="#eef3fc" font-size="14" font-family="sans-serif">1.9%</text>
+</svg>

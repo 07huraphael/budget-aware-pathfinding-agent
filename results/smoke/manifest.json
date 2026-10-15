@@ -1,0 +1,68 @@
+{
+  "version": "0.1.0",
+  "source_sha256": "ef813bf76709e3801a650191418cebd203e73f5ca3e2420127142f929763b58e",
+  "python": "3.11.5",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "started_local": "2026-10-14T17:47:30+0900",
+  "config": {
+    "split": "smoke",
+    "seed": 20261014,
+    "sizes": [
+      20
+    ],
+    "densities": [
+      0.2
+    ],
+    "cost_modes": [
+      "uniform",
+      "weighted"
+    ],
+    "structures": [
+      "random",
+      "u",
+      "wall",
+      "maze"
+    ],
+    "repeats": 2,
+    "budgets": [
+      100,
+      1000
+    ],
+    "profile_memory": true
+  },
+  "rules": {
+    "chunk_size": 32,
+    "low_budget_factor": 4.0,
+    "dense_threshold": 0.25,
+    "stagnation_windows": 2,
+    "minimum_progress": 1.0,
+    "frontier_growth_threshold": 4,
+    "max_switches": 2,
+    "quality_target": 1.1,
+    "improvement_patience": 3,
+    "return_remaining_fraction": 0.1
+  },
+  "methods": [
+    "bfs",
+    "dijkstra",
+    "astar",
+    "greedy",
+    "weighted_1.5",
+    "weighted_3",
+    "initial",
+    "equal",
+    "adaptive",
+    "ara",
+    "no_progress",
+    "no_switch",
+    "no_early_return",
+    "unlimited_switches",
+    "first_solution"
+  ],
+  "map_count": 16,
+  "case_count": 32,
+  "time_semantics": "cooperative deadline checked before/after each expansion; late solutions rejected",
+  "memory_metric": "tracemalloc allocation peak (instrumented timing)",
+  "run_count": 480,
+  "wall_seconds": 1.9441108999999415
+}

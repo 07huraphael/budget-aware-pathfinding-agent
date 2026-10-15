@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="610" viewBox="0 0 1000 610">
+<rect width="100%" height="100%" fill="#101827"/>
+<text x="30" y="40" fill="#f3f6fc" font-size="22" font-family="sans-serif">Quality-qualified reach rate (S1.10, failures included)</text>
+<text x="20" y="89" fill="#d7dfed" font-size="14" font-family="sans-serif">adaptive</text>
+<rect x="200" y="72" width="343.78" height="23" rx="4" fill="#4edbb0"/>
+<text x="880" y="89" fill="#eef3fc" font-size="14" font-family="sans-serif">52.9%</text>
+<text x="20" y="123" fill="#d7dfed" font-size="14" font-family="sans-serif">ara</text>
+<rect x="200" y="106" width="338.00" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="123" fill="#eef3fc" font-size="14" font-family="sans-serif">52.0%</text>
+<text x="20" y="157" fill="#d7dfed" font-size="14" font-family="sans-serif">astar</text>
+<rect x="200" y="140" width="303.33" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="157" fill="#eef3fc" font-size="14" font-family="sans-serif">46.7%</text>
+<text x="20" y="191" fill="#d7dfed" font-size="14" font-family="sans-serif">bfs</text>
+<rect x="200" y="174" width="187.78" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="191" fill="#eef3fc" font-size="14" font-family="sans-serif">28.9%</text>
+<text x="20" y="225" fill="#d7dfed" font-size="14" font-family="sans-serif">dijkstra</text>
+<rect x="200" y="208" width="262.89" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="225" fill="#eef3fc" font-size="14" font-family="sans-serif">40.4%</text>
+<text x="20" y="259" fill="#d7dfed" font-size="14" font-family="sans-serif">equal</text>
+<rect x="200" y="242" width="225.33" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="259" fill="#eef3fc" font-size="14" font-family="sans-serif">34.7%</text>
+<text x="20" y="293" fill="#d7dfed" font-size="14" font-family="sans-serif">first_solution</text>
+<rect x="200" y="276" width="346.67" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="293" fill="#eef3fc" font-size="14" font-family="sans-serif">53.3%</text>
+<text x="20" y="327" fill="#d7dfed" font-size="14" font-family="sans-serif">greedy</text>
+<rect x="200" y="310" width="176.22" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="327" fill="#eef3fc" font-size="14" font-family="sans-serif">27.1%</text>
+<text x="20" y="361" fill="#d7dfed" font-size="14" font-family="sans-serif">initial</text>
+<rect x="200" y="344" width="375.56" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="361" fill="#eef3fc" font-size="14" font-family="sans-serif">57.8%</text>
+<text x="20" y="395" fill="#d7dfed" font-size="14" font-family="sans-serif">no_early_return</text>
+<rect x="200" y="378" width="352.44" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="395" fill="#eef3fc" font-size="14" font-family="sans-serif">54.2%</text>
+<text x="20" y="429" fill="#d7dfed" font-size="14" font-family="sans-serif">no_progress</text>
+<rect x="200" y="412" width="332.22" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="429" fill="#eef3fc" font-size="14" font-family="sans-serif">51.1%</text>
+<text x="20" y="463" fill="#d7dfed" font-size="14" font-family="sans-serif">no_switch</text>
+<rect x="200" y="446" width="378.44" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="463" fill="#eef3fc" font-size="14" font-family="sans-serif">58.2%</text>
+<text x="20" y="497" fill="#d7dfed" font-size="14" font-family="sans-serif">unlimited_switches</text>
+<rect x="200" y="480" width="355.33" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="497" fill="#eef3fc" font-size="14" font-family="sans-serif">54.7%</text>
+<text x="20" y="531" fill="#d7dfed" font-size="14" font-family="sans-serif">weighted_1.5</text>
+<rect x="200" y="514" width="395.78" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="531" fill="#eef3fc" font-size="14" font-family="sans-serif">60.9%</text>
+<text x="20" y="565" fill="#d7dfed" font-size="14" font-family="sans-serif">weighted_3</text>
+<rect x="200" y="548" width="257.11" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="565" fill="#eef3fc" font-size="14" font-family="sans-serif">39.6%</text>
+</svg>

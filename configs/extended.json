@@ -1,0 +1,11 @@
+{
+  "split": "test",
+  "seed": 20261014,
+  "sizes": [20, 50, 100],
+  "densities": [0.1, 0.2, 0.3],
+  "cost_modes": ["weighted", "uniform"],
+  "structures": ["random", "u", "wall", "maze"],
+  "repeats": 30,
+  "structured_repeats": 10,
+  "budgets": [100, 1000, 10000]
+}

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="508" viewBox="0 0 1000 508">
+<rect width="100%" height="100%" fill="#101827"/>
+<text x="30" y="40" fill="#f3f6fc" font-size="22" font-family="sans-serif">S1.10 by budget (all map structures and cost modes)</text>
+<text x="20" y="89" fill="#d7dfed" font-size="14" font-family="sans-serif">adaptive / 100</text>
+<rect x="200" y="72" width="107.25" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="89" fill="#eef3fc" font-size="14" font-family="sans-serif">16.5%</text>
+<text x="20" y="123" fill="#d7dfed" font-size="14" font-family="sans-serif">weighted_1.5 / 100</text>
+<rect x="200" y="106" width="125.67" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="123" fill="#eef3fc" font-size="14" font-family="sans-serif">19.3%</text>
+<text x="20" y="157" fill="#d7dfed" font-size="14" font-family="sans-serif">ara / 100</text>
+<rect x="200" y="140" width="121.33" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="157" fill="#eef3fc" font-size="14" font-family="sans-serif">18.7%</text>
+<text x="20" y="191" fill="#d7dfed" font-size="14" font-family="sans-serif">initial / 100</text>
+<rect x="200" y="174" width="108.33" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="191" fill="#eef3fc" font-size="14" font-family="sans-serif">16.7%</text>
+<text x="20" y="225" fill="#d7dfed" font-size="14" font-family="sans-serif">adaptive / 1000</text>
+<rect x="200" y="208" width="445.25" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="225" fill="#eef3fc" font-size="14" font-family="sans-serif">68.5%</text>
+<text x="20" y="259" fill="#d7dfed" font-size="14" font-family="sans-serif">weighted_1.5 / 1000</text>
+<rect x="200" y="242" width="505.92" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="259" fill="#eef3fc" font-size="14" font-family="sans-serif">77.8%</text>
+<text x="20" y="293" fill="#d7dfed" font-size="14" font-family="sans-serif">ara / 1000</text>
+<rect x="200" y="276" width="413.83" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="293" fill="#eef3fc" font-size="14" font-family="sans-serif">63.7%</text>
+<text x="20" y="327" fill="#d7dfed" font-size="14" font-family="sans-serif">initial / 1000</text>
+<rect x="200" y="310" width="476.67" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="327" fill="#eef3fc" font-size="14" font-family="sans-serif">73.3%</text>
+<text x="20" y="361" fill="#d7dfed" font-size="14" font-family="sans-serif">adaptive / 10000</text>
+<rect x="200" y="344" width="579.58" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="361" fill="#eef3fc" font-size="14" font-family="sans-serif">89.2%</text>
+<text x="20" y="395" fill="#d7dfed" font-size="14" font-family="sans-serif">weighted_1.5 / 10000</text>
+<rect x="200" y="378" width="589.33" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="395" fill="#eef3fc" font-size="14" font-family="sans-serif">90.7%</text>
+<text x="20" y="429" fill="#d7dfed" font-size="14" font-family="sans-serif">ara / 10000</text>
+<rect x="200" y="412" width="639.17" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="429" fill="#eef3fc" font-size="14" font-family="sans-serif">98.3%</text>
+<text x="20" y="463" fill="#d7dfed" font-size="14" font-family="sans-serif">initial / 10000</text>
+<rect x="200" y="446" width="600.17" height="23" rx="4" fill="#709cf5"/>
+<text x="880" y="463" fill="#eef3fc" font-size="14" font-family="sans-serif">92.3%</text>
+</svg>
